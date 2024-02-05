@@ -7,7 +7,7 @@ const DateRange = () => {
   const [final, setFinal] = React.useState('')
     
   return (
-    <div>
+    <form onSubmit={(e) => e.preventDefault()}>
       <DateInput 
       label='Início' 
       value={inicio} 
@@ -18,7 +18,7 @@ const DateRange = () => {
       value={final} 
       onChange={({target}) => setFinal(target.value)}/>
       {final}
-    </div>
+    </form>
   )
 }
 
