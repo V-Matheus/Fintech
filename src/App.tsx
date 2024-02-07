@@ -2,17 +2,17 @@ import Header from './Components/Header'
 import Sidenav from './Components/Sidenav'
 import { DataContextProvider } from './Context/DataContext'
 import Resumo from './Pages/Resumo'
-import './Style.css' 
+import './Style.css'
 
 function App() {
 
   return (
     <DataContextProvider>
-      <div>
-        <Sidenav/>
+      <div className='container'>
+        <Sidenav />
         <main>
-          <Header/>
-          <Resumo/>
+          <Header />
+          <Resumo />
         </main>
       </div>
     </DataContextProvider>
