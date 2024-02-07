@@ -22,7 +22,7 @@ const Resumo = () => {
           <span>{data.filter((i) => i.status === 'processando').reduce((acc, item) => acc + item.preco, 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</span>
         </div>
       </div>
-      <div className='box'>
+      <div className='box mb'>
         Gráficos
       </div>
     </section>
